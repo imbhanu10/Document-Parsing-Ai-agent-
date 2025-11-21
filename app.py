@@ -8,7 +8,7 @@ from agent import run_agent, save_output
 # ------------------------
 # HARDCODE YOUR API KEY HERE
 # ------------------------
-GEMINI_API_KEY = "AIzaSyCdXe87cfAd3daQQ8RFhLUBKHCRU2BOqIw"   # <<< REPLACE THIS ONLY
+GEMINI_API_KEY = "YOUR API KEY"   # <<< REPLACE THIS ONLY
 genai.configure(api_key=GEMINI_API_KEY)
 os.environ["GOOGLE_API_KEY"] = GEMINI_API_KEY
 
@@ -183,3 +183,4 @@ with tab4:
 
     else:
         st.info("👈 Upload a document to run rule checks")
+
