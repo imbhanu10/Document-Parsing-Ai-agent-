@@ -5,7 +5,7 @@ import google.generativeai as genai
 import os
 
 # Configure Gemini
-genai.configure(api_key=os.getenv("AIzaSyCdXe87cfAd3daQQ8RFhLUBKHCRU2BOqIw"))
+genai.configure(api_key=os.getenv("YOUR API KEY"))
 
 # -------------------------------------------------------------
 # HELPER: Clean JSON from LLM response
@@ -297,4 +297,5 @@ if __name__ == "__main__":
     
     print(f"\n✅ Analysis complete! Results saved to: {output_file}")
     print(f"\n📊 Summary:\n{result['summary']}")
+
     print(f"\n✓ All {len(result['rules'])} rules checked")
